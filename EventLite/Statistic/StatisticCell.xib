@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="StatisticCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="票种一" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPk-Xd-4tB">
+                        <rect key="frame" x="7" y="1" width="165" height="44"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="165" id="ECM-yb-2BI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPx-gS-v5f">
+                        <rect key="frame" x="176" y="0.0" width="69" height="44"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="69" id="aaY-EE-hcd"/>
+                            <constraint firstAttribute="height" constant="44" id="qjI-MK-EOH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPI-Dh-63H">
+                        <rect key="frame" x="249" y="1" width="71" height="44"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="71" id="7Pp-LJ-N7b"/>
+                            <constraint firstAttribute="height" constant="44" id="tOn-sc-YbM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lPk-Xd-4tB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-7" id="4WT-GH-UXu"/>
+                    <constraint firstAttribute="centerY" secondItem="qPI-Dh-63H" secondAttribute="centerY" constant="-1.5" id="CM3-NM-Xra"/>
+                    <constraint firstItem="QPx-gS-v5f" firstAttribute="leading" secondItem="lPk-Xd-4tB" secondAttribute="trailing" constant="4" id="L6c-IE-8n3"/>
+                    <constraint firstAttribute="centerY" secondItem="QPx-gS-v5f" secondAttribute="centerY" id="Ymx-lt-ASJ"/>
+                    <constraint firstItem="lPk-Xd-4tB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-1" id="hcW-si-9WA"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="lPk-Xd-4tB" secondAttribute="bottom" constant="-10" id="jMv-mt-PSY"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="qPI-Dh-63H" secondAttribute="trailing" constant="-8" id="uyg-3s-gZG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="totalCountLabel" destination="qPI-Dh-63H" id="KPj-ui-mkI"/>
+                <outlet property="typeLabel" destination="lPk-Xd-4tB" id="gYO-k3-3Lc"/>
+                <outlet property="usedCountLabel" destination="QPx-gS-v5f" id="d2w-Xt-LX4"/>
+            </connections>
+            <point key="canvasLocation" x="413" y="423"/>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

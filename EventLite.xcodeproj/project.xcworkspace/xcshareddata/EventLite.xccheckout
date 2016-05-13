@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>36779860-42C7-4CAB-910F-31C97FC60F82</string>
+	<key>IDESourceControlProjectName</key>
+	<string>EventLite</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5e209b29-4666-47e1-8dfc-d676ec2cbe28++7572</key>
+		<string>svn://192.168.1.200/svn/mosh.mobile/EventLite/EventLite</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>EventLite.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5e209b29-4666-47e1-8dfc-d676ec2cbe28++7572</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>5e209b29-4666-47e1-8dfc-d676ec2cbe28++7572</key>
+		<string>svn://192.168.1.200/svn</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>svn://192.168.1.200/svn/mosh.mobile/EventLite/EventLite/EventLite.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5e209b29-4666-47e1-8dfc-d676ec2cbe28++7572</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5e209b29-4666-47e1-8dfc-d676ec2cbe28++7572</string>
+			<key>IDESourceControlWCCName</key>
+			<string>EventLite</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OrderView">
+            <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.34999999999999964" contentMode="scaleToFill" id="a2B-y4-s8d">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="420"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="UEE-Zq-H6L">
+                    <rect key="frame" x="20" y="74" width="280" height="267"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" id="lHD-3c-N92">
+                            <rect key="frame" x="0.0" y="0.0" width="280" height="267"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" id="KXe-5B-bHe">
+                            <rect key="frame" x="0.0" y="33" width="280" height="226"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="该订单所有票" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LBd-6V-yeZ">
+                            <rect key="frame" x="99" y="8" width="84" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="listView" destination="KXe-5B-bHe" id="uyJ-0X-p9C"/>
+                <outlet property="testView" destination="UEE-Zq-H6L" id="rei-Pm-eIb"/>
+            </connections>
+            <point key="canvasLocation" x="411" y="410"/>
+        </view>
+        <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FsP-73-0jj">
+            <rect key="frame" x="0.0" y="0.0" width="114" height="34"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+            <state key="normal" title="全部验票" backgroundImage="blue.png">
+                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+            </state>
+            <connections>
+                <action selector="onClickButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="W0m-ih-qVH"/>
+            </connections>
+            <point key="canvasLocation" x="123" y="504"/>
+        </button>
+        <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WEC-PO-CJ7">
+            <rect key="frame" x="0.0" y="0.0" width="109" height="33"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+            <state key="normal" title="取消" backgroundImage="blue.png">
+                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+            </state>
+            <connections>
+                <action selector="onClickButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="AHV-Ez-6bX"/>
+            </connections>
+            <point key="canvasLocation" x="87.5" y="405.5"/>
+        </button>
+    </objects>
+    <resources>
+        <image name="blue.png" width="106" height="38"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

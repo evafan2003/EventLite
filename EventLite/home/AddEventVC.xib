@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddEventVC">
+            <connections>
+                <outlet property="password" destination="r6P-xh-q0E" id="q4m-yW-pBI"/>
+                <outlet property="userName" destination="bu6-FF-1Lx" id="rkj-wW-ols"/>
+                <outlet property="view" destination="UIJ-0N-FSR" id="yWy-g7-C8E"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="UIJ-0N-FSR">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="88a-Wu-VBU">
+                    <rect key="frame" x="0.0" y="7" width="320" height="191"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="login_info.png" translatesAutoresizingMaskIntoConstraints="NO" id="jZN-uf-nOm">
+                            <rect key="frame" x="40" y="20" width="240" height="76"/>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="219" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="验票账号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bu6-FF-1Lx">
+                            <rect key="frame" x="98" y="24" width="174" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="219" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="验票密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r6P-xh-q0E">
+                            <rect key="frame" x="98" y="56" width="174" height="39"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKS-Ju-ter">
+                            <rect key="frame" x="41" y="115" width="238" height="37"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="添加" backgroundImage="login_button.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" title="添加" backgroundImage="login_button_h.png"/>
+                            <connections>
+                                <action selector="login:" destination="-1" eventType="touchUpInside" id="7te-9U-StX"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVi-FK-F6N">
+                            <rect key="frame" x="40" y="160" width="185" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="如何获取验票账号密码？">
+                                <color key="titleColor" red="0.13834394019999999" green="0.260310441" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="getUsernameAndPassword:" destination="-1" eventType="touchUpInside" id="8ob-68-30b"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </view>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="注册活动易账号请至官网" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="etC-GY-GAh">
+                    <rect key="frame" x="27" y="209" width="172" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.71764705880000002" green="0.71764705880000002" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="www.evente.cn" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="nyb-dq-XuO">
+                    <rect key="frame" x="194" y="209" width="99" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.078662928450000003" green="0.17434145370000001" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEj-Yl-F6J">
+                    <rect key="frame" x="194" y="206" width="99" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="urlButtonPress:" destination="-1" eventType="touchUpInside" id="wbf-AA-7bM"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="如有疑问，请致电客服：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="CM4-Mf-z2H">
+                    <rect key="frame" x="27" y="235" width="169" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.71764705880000002" green="0.71764705880000002" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ChM-mK-wdy">
+                    <rect key="frame" x="189" y="237" width="114" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="phoneButtonPress:" destination="-1" eventType="touchUpInside" id="8hL-WI-pX6"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="400-063-0260" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="a2B-X6-m18">
+                    <rect key="frame" x="194" y="234" width="99" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.078662928450000003" green="0.17434145370000001" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_button.png" width="238" height="37"/>
+        <image name="login_button_h.png" width="238" height="37"/>
+        <image name="login_info.png" width="240" height="76"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
